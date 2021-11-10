@@ -1,6 +1,8 @@
 package preperation.hackerrank.problemsolving.easy;
 
 import java.util.*;
+import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 
 /**
     https://www.hackerrank.com/challenges/migratory-birds
@@ -62,6 +64,17 @@ public class MigratoryBirds {
         }
 
         return Collections.max(birds.entrySet(), Map.Entry.comparingByValue()).getKey();
+    }
+
+    public static int migratoryBirdsV2(List<Integer> arr) {
+        int[] birds = new int[arr.size()];
+
+        for (int i = 0; i < arr.size(); i++) {
+            birds[arr.get(i)] += 1;
+        }
+        List <Integer> birdList = Arrays.stream(birds).boxed().collect(Collectors.toList()); // for using indexOf method
+
+        return birdList.indexOf(Collections.max(birdList));
     }
 
 }
