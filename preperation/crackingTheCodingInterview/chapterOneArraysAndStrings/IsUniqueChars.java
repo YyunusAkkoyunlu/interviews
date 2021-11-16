@@ -23,4 +23,16 @@ public class IsUniqueChars {
         return true;
     }
 
+    boolean isUniqueCharsV2(String str) {
+        int checker = 0;
+        for (int i = 0; i < str.length(); i++) {
+            int value = str.charAt(i) - 'a';
+            if ((checker & (1 << value)) > 0) {
+                return false;
+            }
+            checker |= (1 << value);
+        }
+
+        return true;
+    }
 }
