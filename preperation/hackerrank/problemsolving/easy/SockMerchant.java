@@ -1,8 +1,6 @@
 package preperation.hackerrank.problemsolving.easy;
 
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 
 /**
     https://www.hackerrank.com/challenges/sock-merchant/problem
@@ -62,6 +60,22 @@ public class SockMerchant {
         }
 
         return pairOfColor;
+    }
+
+    public static int sockMerchantV2(int n, List<Integer> ar) {
+        Set<Integer> colors = new HashSet<>();
+        int pairs = 0;
+
+        for (int i = 0; i < n; i++) {
+            if (!colors.contains(ar.get(i))) {
+                colors.add(i);
+            } else {
+                pairs ++;
+                colors.remove(ar.get(i));
+            }
+        }
+
+        return pairs;
     }
 
 }
