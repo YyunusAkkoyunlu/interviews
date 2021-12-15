@@ -52,4 +52,15 @@ public class CatsAndMouse {
 
     }
 
+    static String catAndMouseV2(int x, int y, int z) {
+        switch (Integer.compare(Math.abs(z - x), Math.abs(z - y))) {
+            case -1:
+                return "Cat A";
+            case 1:
+                return "Cat B";
+        }
+
+        return "Mouse C";
+    }
+
 }
