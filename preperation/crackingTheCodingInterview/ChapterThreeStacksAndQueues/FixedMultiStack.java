@@ -21,10 +21,10 @@ public class FixedMultiStack {
 
 
     /* push value onto stack */
-    public void push(int stackNum, int value) /*throws FullStackException*/ {
+    public void push(int stackNum, int value) throws FullStackException {
         /* check that we have space for the next element */
         if (isFull(stackNum)) {
-            /*throw new FullStackException();*/
+            throw new FullStackException();
         }
 
         /* increment stack pointer and then update top value */
