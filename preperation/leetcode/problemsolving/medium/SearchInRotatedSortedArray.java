@@ -3,7 +3,7 @@ package preperation.leetcode.problemsolving.medium;
 /**
 
  https://leetcode.com/problems/search-in-rotated-sorted-array/
- 
+
 
  There is an integer array nums sorted in ascending order (with distinct values).
 
@@ -39,7 +39,7 @@ public class SearchInRotatedSortedArray {
         while (right > left) {
             int midpoint = left + (right - left) / 2;
             if (nums[midpoint] > nums[right]) {
-                midpoint = left + 1;
+                left = midpoint + 1;
             } else {
                 right = midpoint;
             }
