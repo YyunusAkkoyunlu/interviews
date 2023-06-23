@@ -1,4 +1,4 @@
-package preperation.leetcode.problemsolving.hard;
+package preperation.leetcode.problemsolving.medium;
 
 /**
 
