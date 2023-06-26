@@ -33,7 +33,7 @@ public class SearchInsertPosition {
             if (nums[middle] == target) {
                 return middle;
             } else if (nums[middle] > target) {
-                endIndex = middle;
+                endIndex = middle - 1;
             } else {
                 startIndex = middle + 1;
             }
