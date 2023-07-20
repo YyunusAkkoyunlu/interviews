@@ -34,7 +34,7 @@ public class HappyLadybugs {
 
         if (!uniqueCharacterSet.contains('_')) {
             for (int i = 1; i < bugs.length() - 1; i++) {
-                if (bugs.charAt(i - 1) != bugs.charAt(i) && bugs.charAt(i + 1) != bugs.charAt(i)) {
+                if (bugs.charAt(i - 1) != bugs.charAt(i) && bugs.charAt(i) != bugs.charAt(i + 1)) {
                     return "NO";
                 }
             }
