@@ -15,7 +15,6 @@ package preperation.leetcode.problemsolving.medium;
      - It is adjacent to an 'O' that should not be flipped.
      The bottom 'O' is on the border, so it is not flipped.
      The other three 'O' form a surrounded region, so they are flipped.
-
  Example 2:
      Input: board = [["X"]]
      Output: [["X"]]
