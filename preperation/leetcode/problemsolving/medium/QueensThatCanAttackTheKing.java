@@ -23,10 +23,6 @@ import java.util.List;
  */
 public class QueensThatCanAttackTheKing {
 
-    public static void main(String[] args) {
-
-    }
-
     public static List<List<Integer>> queensAttacktheKing(int[][] queens, int[] king) {
         List<List<Integer>> result = new ArrayList<>();
         boolean[][] seen = new boolean[8][8];
