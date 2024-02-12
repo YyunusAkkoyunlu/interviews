@@ -41,7 +41,7 @@ public class Partition {
         /* merge before list and after list */
         beforeEnd.next = afterStart;
 
-        return beforeStart
+        return beforeStart;
     }
 
 }

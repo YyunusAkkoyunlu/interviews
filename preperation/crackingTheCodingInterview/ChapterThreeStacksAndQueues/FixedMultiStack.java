@@ -1,6 +1,7 @@
 package preperation.crackingTheCodingInterview.ChapterThreeStacksAndQueues;
 
 import java.util.EmptyStackException;
+import preperation.crackingTheCodingInterview.FullStackException;
 
 public class FixedMultiStack {
     

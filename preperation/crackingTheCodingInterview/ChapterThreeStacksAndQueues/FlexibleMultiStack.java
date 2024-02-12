@@ -1,5 +1,7 @@
 package preperation.crackingTheCodingInterview.ChapterThreeStacksAndQueues;
 
+import preperation.crackingTheCodingInterview.FullStackException;
+
 import java.util.EmptyStackException;
 import java.util.Stack;
 
