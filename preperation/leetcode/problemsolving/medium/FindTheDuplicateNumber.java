@@ -20,11 +20,6 @@ import java.util.Set;
  */
 public class FindTheDuplicateNumber {
 
-    public static void main(String[] args) {
-        FindTheDuplicateNumber findTheDuplicateNumber = new FindTheDuplicateNumber();
-        System.out.println(findTheDuplicateNumber.findDuplicateV2(new int[]{2, 6, 4, 1, 3, 5}));
-    }
-
     public int findDuplicate(int[] nums) {
         int slow = 0, fast = 0;
 
